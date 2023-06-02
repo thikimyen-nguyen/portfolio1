@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio as a frontend developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Yen Nguyen</title>
+</head>
+<body>
+    <header>
+       
+        <ul>
+            <li><a href="#projects"> Projects</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </ul>
+        <hr>
+       
+    </header>
+    <main>
+       
+        <div class="cover">
+            <img src="http://howareyounorway.no/wp-content/uploads/2023/06/myavatar_transparent.webp" alt="yen nguyen">
+            <div>
+                <p class="styling"> Yen Nguyen</p>
+                <button class="cta">About Me</button>
+            </div>
+            <div class="square_right"></div>
+            <div class="square_left"></div>
+        </div>
+        <section id="projects">
+            <h1>my projects</h1>
+            <hr>
+        </section>
+      
+        <section id="about">
+            <h1>about me</h1>
+            <hr>
+            <div class="about">
+                <p>Hi! My name is Yen Nguyen and big welcome all of you here.</p> 
+                <p>I am currently a Frontend Student and this portfolio site will be my corner of developer-to-be. I step into the IT world quite late in life after years being involved
+                    myself in linguistics and literature and a long maternity leave. I spent time studying myself and Frontend Development suits me best at the moment 
+                    as I like working on PC, making things work and problem solving.
+                </p>
+                <div>
+                    <p>You can get to know me more via</p>
+                    <div>
+                        <button class="cta"><a href="https://github.com/thikimyen-nguyen">My Github</a></button>
+                        <button class="cta"><a href="https://www.linkedin.com/in/yen-nguyen-76340440/">My LinkedIn</a></button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h1>contact me</h1>
+            <hr>
+            <div class="contact">
+                <p>Should you need any further information, please do not hesitate to send me a message.</p> 
+                <form>
+                    <label for="name">Name <span>(Min 05 characters)</span></label>
+                    <div class="error" id="name_error">*Please enter your name with at least 05 characters</div>
+                    <input type="text" name="name" id="name" placeholder="John Smith" aria-required="true">
+                    <label for="email">Email</label>
+                    <div class="error" id="email_error">*Please enter a valid email address</div>
+                    <input type="email" name="email" id="email" placeholder="abc@3f.com" aria-required="true">
+                    <label for="subject">Subject <span>(Min 05 characters)</span></label>
+                    <div class="error" id="subject_error">*Please enter a subject with at least 05 characters</div>
+                    <input type="text" name="subject" id="subject" placeholder="Your concern" aria-required="true">
+                    <label for="message">Message <span>(Min 10 characters)</span></label>
+                    <div class="error" id="message_error">*Please type your message with at least 10 characters</div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here..."></textarea>
+                    <button id="submit_contact" class="cta">Submit</button>
+                </form>   
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Yen Nguyen 2023</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
