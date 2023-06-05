@@ -262,6 +262,7 @@ width: 40%;
     }
     .card img {
        height: 270px;
+       object-fit: cover;
     }
     .about {
         max-width: 900px;
