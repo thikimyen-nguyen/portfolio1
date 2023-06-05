@@ -1,11 +1,3 @@
-// // Navigation
-// const projects = document.querySelector(".projects");
-// const aboutMe = document.querySelector(".about_me");
-// const contactMe = document.querySelector(".contact_me");
-
-
-
-
 
 // Validate contact form
 const inputname = document.querySelector("#name");
@@ -17,9 +9,8 @@ const subjectError = document.querySelector("#subject_error");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#message_error");
 const submitButton = document.querySelector("#submit_contact");
-// const submitSuccess = document.querySelector(".submit_success");
 const form = document.querySelector("form");
-// submitSuccess.style.display = "none";
+
 
 submitButton.onclick = function validateContact(event) {
     event.preventDefault();
@@ -28,11 +19,6 @@ submitButton.onclick = function validateContact(event) {
     validateSubject(subject);
     validateMessage(message);
 
-    // if (validateName(inputname) &&  validateEmail(email) && validateSubject(subject) && validateMessage(message)) {
-    //     form.reset();
-    //     submitSuccess.style.display = "block";
-    //     form.style.display = "none";
-    // }
 }
 
 function checkLength(value, len) {
