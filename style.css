@@ -41,6 +41,12 @@ li {
     font-size: 1rem;
     
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--dark_violet);
+}
 
 header ul {
     display: flex;
