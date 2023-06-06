@@ -19,9 +19,6 @@ body {
 p {
     line-height: 160%;
 }
-/* img {
-    width: 100%;
-} */
 
 h1 {
     text-transform: capitalize;
@@ -107,6 +104,7 @@ hr {
 a {
     text-decoration: none;
     color: white;
+ 
 }
 .cta {
     background-color: var(--dark_violet);
@@ -189,7 +187,9 @@ width: 40%;
     width: 100%;
   
 }
-
+.buttons {
+    margin-bottom: 0.5em;
+}
 /* Tablet */
 @media only screen and (min-width: 641px) {
 
@@ -227,9 +227,21 @@ width: 40%;
   
 }
 
-
-/* Desktop */
+/* Large Tablet */
 @media only screen and (min-width: 1008px) {
+    .cards_container {
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+        }
+        .card img {
+            height: 270px;
+            object-fit: cover;
+         }
+}
+/* Desktop */
+@media only screen and (min-width: 1221px) {
     .cover img {
         width: 20%;
         height: 20%;
@@ -255,15 +267,10 @@ width: 40%;
     }
     /* Project cards */
     .cards_container {
-    max-width: 1400px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2em;
+   
     }
-    .card img {
-       height: 270px;
-       object-fit: cover;
-    }
+   
     .about {
         max-width: 900px;
         margin: auto;
