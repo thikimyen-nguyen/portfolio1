@@ -133,6 +133,7 @@ a {
     color: var(--dark_violet);
     padding: 0.5em 1em;
     text-align: left;
+    border-radius: 10px;
 }
 form {
     padding: 0em 1em;
@@ -144,9 +145,7 @@ input, textarea {
     border-radius: 5px;
     margin: 0.5em 0em 1.5em 0em;
     font-size: large;
-    border: 1px solid var(--dark_violet);
-    /* background-color: var(--light_violet); */
-    /* opacity: 0.8; */
+    border: 2px solid var(--light_violet);
 }
 
 .error {
@@ -186,7 +185,7 @@ width: 40%;
 }
 .card img {
     width: 100%;
-  
+    border-radius: 10px;
 }
 .buttons {
     margin-bottom: 0.5em;
