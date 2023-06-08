@@ -3,6 +3,7 @@
     --violet: #854AD9;
     --gold: #BF771F;
     --light_violet: #C4A6ED;
+    --black: #120321;
     --styling_font: 'Dancing Script', Arial, Verdana, Tahoma, Georgia, sans-serif;
     --body_font: 'Montserrat', Arial, Verdana, Tahoma, Georgia, sans-serif;
     --heading_font: 'Playfair Display', Arial, Verdana, Tahoma, Georgia, sans-serif;
@@ -12,7 +13,7 @@ body {
     font-family: var(--body_font);
     color: white;
     font-size: 1rem;
-    background-color: var(--dark_violet);
+    background-color: var(--black);
     text-align: center;
     
 }
@@ -42,7 +43,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: var(--dark_violet);
+    background-color: var(--black);
 }
 
 header ul {
@@ -73,9 +74,8 @@ footer {
 
 .cover img {
     width: 50%;
-    height: 50%;
     margin: auto;
-    background-color: white;
+    background-color: var(--black);
     border-radius: 50%;
 }
 .cover p {
@@ -144,8 +144,9 @@ input, textarea {
     border-radius: 5px;
     margin: 0.5em 0em 1.5em 0em;
     font-size: large;
-    background-color: var(--light_violet);
-    opacity: 0.8;
+    border: 1px solid var(--dark_violet);
+    /* background-color: var(--light_violet); */
+    /* opacity: 0.8; */
 }
 
 .error {
