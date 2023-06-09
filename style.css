@@ -18,7 +18,7 @@ body {
     
 }
 p {
-    line-height: 160%;
+    line-height: 200%;
 }
 
 h1 {
@@ -49,6 +49,15 @@ header ul {
     padding: 0em;
     
 }
+hr {
+    border: 1px solid var(--dark_violet);
+    margin: 1.5em 0em;
+}
+a {
+    text-decoration: none;
+    color: white;
+ 
+}
 
 footer {
     background-color: var(--light_violet);
@@ -57,6 +66,7 @@ footer {
     color: var(--dark_violet);
     margin-top: 3em;
 }
+
 /* cover */
 .cover_container {
    display: grid;
@@ -76,22 +86,23 @@ footer {
     margin: 0;
     align-self: center;
     background-color: rgba(192, 192, 192, 0.1);
-    padding: 0.5em 0em;
-    height: 50%;
+    padding: 0.6em 0em;
+   
 }
 #grid2 {
     grid-area: intro;
     color: white;
-    align-self: center;
-    padding: 1em 0em;
+    align-self: start;
     margin: 0;
     font-size: 0.8rem;
+    padding-top: 0.5em;
 }
 
 #grid3 {
     grid-area: image;
 }
 .styling {
+    font-family: var(--body_font);
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -104,34 +115,24 @@ footer {
     font-weight: 900;
     
 }
-/* .cover p {
-    margin: 0.3em;
-}
-#cover {
-    position: relative;
-}
-.cover_line {
-    background-color: var(--light_violet);
-    height: 50%;
-    width: 100%;
-    top: 25%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.3;
-}
-.cover_line div {
-    width: 50%;
-    
-} */
+/* tech stack */
 
-hr {
-    border: 1px solid var(--dark_violet);
-    margin: 1.5em 0em;
+.tech_stacks img {
+    width: 40px;
 }
-a {
-    text-decoration: none;
-    color: white;
- 
+.tech_title {
+    color: var(--light_violet);
+} 
+.tech_container p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+.tech_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    justify-content: center;
 }
 .cta {
     background-color: var(--light_violet);
@@ -222,7 +223,6 @@ width: 40%;
 /* Tablet */
 @media only screen and (min-width: 641px) {
 
-  
     body {
         font-size: 1.2rem;
     }
@@ -233,15 +233,40 @@ width: 40%;
     h2 {
         font-size: 1.5rem;
     }
-    .styling {
-        font-size: 2.5rem;
-       
-    }
-    li {
+  
+    li, .tech_title  {
         font-size: 1.5rem;
     }
     .cta {
         font-size: 1rem;
+    }
+    /* cover */
+    #grid1 {
+        padding: 1em 0em;
+    }
+    #grid2 {
+        font-size: 1.5rem;
+        padding-top: 1em;
+    }
+    
+    .styling {
+        font-size: 2.5rem;
+    }
+    .styling span {
+        font-size: 3rem;
+    }
+    /* tech stack */
+
+    .tech_stacks img {
+        width: 50px;
+    }
+    
+    .tech_container p {
+        font-size: 1rem;
+    }
+    .tech_content {
+        column-gap: 1.5em;
+        
     }
     /* contact form */
     .contact, .cards_container {
@@ -256,22 +281,8 @@ width: 40%;
   
 }
 
-/* Large Tablet */
+/* desktop */
 @media only screen and (min-width: 1008px) {
-    .cards_container {
-        max-width: 1400px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2em;
-        }
-        .card img {
-            height: 270px;
-            object-fit: cover;
-         }
-}
-/* Desktop */
-@media only screen and (min-width: 1221px) {
-  
     body {
         max-width: 1400px;
         margin: auto;
@@ -280,25 +291,75 @@ width: 40%;
     h1 {
         font-size: 2.5rem;
     }
-    .styling {
-        font-size: 3rem;
-       
-    }
-    li {
+
+    li, .tech_title  {
         font-size: 2rem;
+    }
+    .about {
+        max-width: 900px;
+        margin: auto;
+    }
+    /* cover */
+
+    #grid2 {
+        font-size: 2rem;
+        padding-top: 2em;
+    }
+    
+    .styling {
+        font-size: 3.5rem;
+    }
+    .styling span {
+        font-size: 4.5rem;
+    }
+     /* tech stack */
+
+     .tech_stacks img {
+        width: 60px;
+    }
+    
+    .tech_container p {
+        font-size: 2rem;
+    }
+    .tech_content {
+        column-gap: 2.5em;
+        
     }
      /* contact form */
      .contact {
         max-width: 800px;
     }
+      /* Project cards */
+    .cards_container {
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+        }
+    .card img {
+        height: 270px;
+        object-fit: cover;
+        }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1221px) {
+     /* cover */
+    .styling {
+        font-size: 4rem;
+    }
+    .styling span {
+        font-size: 5rem;
+    }
+    #grid2 {
+        padding-top: 2.5em;
+    }
+    
+  
     /* Project cards */
     .cards_container {
     grid-template-columns: repeat(3, 1fr);
    
     }
    
-    .about {
-        max-width: 900px;
-        margin: auto;
-    }
+  
 }
