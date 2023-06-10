@@ -25,9 +25,11 @@ h1 {
     text-transform: capitalize;
     font-family: var(--heading_font);
     font-size: 1.5rem;
-    margin-top: 150px;
+    margin: 6em 0em 2em;
 }
-
+h2 {
+    color: var(--light_violet);
+}
 li {
     list-style: none;
     padding: 0.7em;
@@ -63,7 +65,7 @@ footer {
     background-color: var(--light_violet);
     padding: 0.3em;
     text-align: center;
-    color: var(--dark_violet);
+    color: var(--black);
     margin-top: 3em;
 }
 
@@ -116,7 +118,12 @@ footer {
     
 }
 /* tech stack */
-
+.tech_stacks {
+    margin: 2em 0em 3em;
+}
+.tech_stacks p {
+    text-align: left;
+}
 .tech_stacks img {
     width: 40px;
 }
@@ -140,22 +147,30 @@ footer {
     border-radius: 10px;
     padding: 0.5em 1.5em;
     font-family: var(--body_font);
-    font-size: 0.8rem;
-    margin: 0.5em;
+    font-size: 1rem;
+    margin: 1em 0em;
 }
 .cta:hover {
     background-color: var(--violet);
-    color: black;
+    color: var(--black);
 }
-.about {
-    background-color: var(--light_violet);
-    color: var(--dark_violet);
-    padding: 0.5em 1em;
-    text-align: left;
+.cta_cover {
+    border: 1px solid var(--violet);
     border-radius: 10px;
+    padding: 0.5em 1.5em;
+    background-color: black;
 }
+.cta_cover:hover {
+    background-color: var(--light_violet);
+    color: var(--black);
+}
+#cta_cover {
+    text-align: right;
+}
+
+
 /* Contact form */
-.contact {
+/* .contact {
     background-color: white;
     color: var(--dark_violet);
     padding: 0.5em 1em;
@@ -188,7 +203,7 @@ span {
 }
 #submit_contact {
 width: 40%;
-}
+} */
 /* Project cards */
 
 .cards_container {
@@ -197,12 +212,12 @@ width: 40%;
   
 }
 .card {
-    border: 2px solid var(--violet);
+    border: 2px solid var(--dark_violet);
     border-radius: 10px;
     padding: 0.5em;
     margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 .card_title {
     font-family: var(--styling_font);
@@ -218,17 +233,39 @@ width: 40%;
     text-align: left;
 }
 .buttons {
-    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+/* About */
+.about {
+    border: 1px solid var(--light_violet);
+    color: white;
+    padding: 0.5em 1em;
+    text-align: left;
+    border-radius: 10px;
+}
+.about .buttons {
+    text-align: center;
+}
+/* Contact */
+.contact span {
+    color: var(--light_violet);
+    text-decoration: underline;
 }
 /* Tablet */
 @media only screen and (min-width: 641px) {
 
-    body {
+    body, .cta {
         font-size: 1.2rem;
     }
  
     h1 {
         font-size: 1.8rem;
+        margin-top: 200px;
+        margin-bottom: 70px;
     }
     h2 {
         font-size: 1.5rem;
@@ -237,9 +274,7 @@ width: 40%;
     li, .tech_title  {
         font-size: 1.5rem;
     }
-    .cta {
-        font-size: 1rem;
-    }
+   
     /* cover */
     #grid1 {
         padding: 1em 0em;
@@ -287,9 +322,11 @@ width: 40%;
         max-width: 1400px;
         margin: auto;
     }
- 
+   
     h1 {
         font-size: 2.5rem;
+        margin-top: 300px;
+        margin-bottom: 100px;
     }
 
     li, .tech_title  {
