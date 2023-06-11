@@ -168,42 +168,6 @@ footer {
     text-align: right;
 }
 
-
-/* Contact form */
-/* .contact {
-    background-color: white;
-    color: var(--dark_violet);
-    padding: 0.5em 1em;
-    text-align: left;
-    border-radius: 10px;
-}
-form {
-    padding: 0em 1em;
-    display: flex;
-    flex-direction: column;
-}
-input, textarea {
-    padding: 0.5em;
-    border-radius: 5px;
-    margin: 0.5em 0em 1.5em 0em;
-    font-size: large;
-    border: 2px solid var(--light_violet);
-}
-
-.error {
-    display: none;
-}
-
-span {
-    font-style: italic;
-    font-size: smaller;
-}
-.error {
-    color: red;
-}
-#submit_contact {
-width: 40%;
-} */
 /* Project cards */
 
 .cards_container {
@@ -216,8 +180,6 @@ width: 40%;
     border-radius: 10px;
     padding: 0.5em;
     margin-bottom: 2em;
-    /* display: flex;
-    flex-direction: column; */
 }
 .card_title {
     font-family: var(--styling_font);
@@ -251,9 +213,8 @@ width: 40%;
     text-align: center;
 }
 /* Contact */
-.contact span {
+.contact a {
     color: var(--light_violet);
-    text-decoration: underline;
 }
 /* Tablet */
 @media only screen and (min-width: 641px) {
