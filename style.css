@@ -119,7 +119,7 @@ footer {
 }
 /* tech stack */
 .tech_stacks {
-    margin: 2em 0em 3em;
+    margin: 2em 0.5em 3em;
 }
 .tech_stacks p {
     text-align: left;
@@ -159,13 +159,14 @@ footer {
     border-radius: 10px;
     padding: 0.5em 1.5em;
     background-color: black;
+    margin: 0.5em;
 }
 .cta_cover:hover {
     background-color: var(--light_violet);
     color: var(--black);
 }
 #cta_cover {
-    text-align: right;
+    text-align: center;
 }
 
 /* Project cards */
