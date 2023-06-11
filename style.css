@@ -217,6 +217,10 @@ footer {
 .contact a {
     color: var(--light_violet);
 }
+.email:hover {
+    text-decoration: underline;
+}
+
 /* Tablet */
 @media only screen and (min-width: 641px) {
 
