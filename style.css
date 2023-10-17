@@ -4,9 +4,8 @@
     --gold: #BF771F;
     --light_violet: #C4A6ED;
     --black: #120321;
-    --styling_font: 'Dancing Script', Arial, Verdana, Tahoma, Georgia, sans-serif;
     --body_font: 'Montserrat', Arial, Verdana, Tahoma, Georgia, sans-serif;
-    --heading_font: 'Playfair Display', Arial, Verdana, Tahoma, Georgia, sans-serif;
+   
 
 }
 body {
@@ -23,7 +22,6 @@ p {
 
 h1 {
     text-transform: capitalize;
-    font-family: var(--heading_font);
     font-size: 1.5rem;
     margin: 6em 0em 2em;
 }
@@ -62,21 +60,20 @@ a {
 }
 
 footer {
-    background-color: var(--light_violet);
     padding: 0.3em;
     text-align: center;
-    color: var(--black);
+    color: var(--light_violet);
     margin-top: 3em;
 }
 
 /* cover */
 .cover_container {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(2, 1fr);
    grid-template-areas: 
-   "name name image"
-   "intro intro image";
+   "name name name image"
+   "intro intro intro image";
    align-items: center;
 }
 .cover_container img {
@@ -88,7 +85,7 @@ footer {
     margin: 0;
     align-self: center;
     background-color: rgba(192, 192, 192, 0.1);
-    padding: 0.6em 0em;
+    
    
 }
 #grid2 {
@@ -154,6 +151,11 @@ footer {
     background-color: var(--violet);
     color: var(--black);
 }
+.cta-primary {
+    background-color: black;
+    border: 1px solid var(--violet);
+    color: var(--light_violet);
+}
 .cta_cover {
     border: 1px solid var(--violet);
     border-radius: 10px;
@@ -183,7 +185,6 @@ footer {
     margin-bottom: 2em;
 }
 .card_title {
-    font-family: var(--styling_font);
     font-size: 1.5rem;
     text-align: left;
     margin: 0em;
@@ -197,8 +198,8 @@ footer {
 }
 .buttons {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+   justify-content: space-evenly;
+   
 }
 
 
@@ -243,7 +244,7 @@ footer {
    
     /* cover */
     #grid1 {
-        padding: 1em 0em;
+        padding: 0.4em 0em;
     }
     #grid2 {
         font-size: 1.5rem;
