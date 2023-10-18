@@ -76,16 +76,13 @@ footer {
    "intro intro intro image";
    align-items: center;
 }
-.cover_container img {
-    width: 100%;
-}
 
 #grid1 {
     grid-area: name;
     margin: 0;
     align-self: center;
     background-color: rgba(192, 192, 192, 0.1);
-    
+   
    
 }
 #grid2 {
@@ -94,11 +91,13 @@ footer {
     align-self: start;
     margin: 0;
     font-size: 0.8rem;
-    padding-top: 0.5em;
+  
 }
 
 #grid3 {
     grid-area: image;
+    width: 90%;
+    justify-self: end;
 }
 .styling {
     font-family: var(--body_font);
