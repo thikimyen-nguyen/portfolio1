@@ -65,7 +65,10 @@ footer {
     color: var(--light_violet);
     margin-top: 3em;
 }
-
+.stylingFont {
+    color: var(--violet);
+    font-style: italic;
+}
 /* cover */
 .cover_container {
    display: grid;
