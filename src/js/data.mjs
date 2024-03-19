@@ -13,7 +13,7 @@ export const projects = [
     "description": "A website for a nails art shop. This is my real project for a friend who owns the shop during Christmas break on my second year in Noroff.",
     "type": "Real Project",
     "githubLink": "https://github.com/thikimyen-nguyen/thuynguyennegler",
-    "liveSite": "https://thuynguyennegler.netlify.app/"
+    "liveSite": "https://thuynguyennegler.no/"
   },
   {
     "name": "3F food blog",
