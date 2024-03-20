@@ -1,5 +1,13 @@
 export const projects = [
   {
+    "name": "B.Shop Online Site",
+    "image": "images/bshop.png",
+    "description": "An online shop with Noroff API. This project focused on JS framework - React and Tailwind CSS to create a functional shopping cart.",
+    "type": "React Project (on-going)",
+    "githubLink": "https://github.com/thikimyen-nguyen/js-framework-react",
+    "liveSite": "https://bshop-no.netlify.app/"
+  },
+  {
     "name": "babeebids Auction Site",
     "image": "images/babeebids.webp",
     "description": "An auction site for baby and maternity products. This project in the 2nd year at Noroff focused on CSS framework and more in JavaScript",
@@ -91,6 +99,11 @@ export const techStacks = [
     "name": "React",
     // <a href="https://iconscout.com/3d-illustrations/github" class="text-underline font-size-sm" target="_blank">Github</a> by <a href="https://iconscout.com/contributors/dwianggaicon" class="text-underline font-size-sm" target="_blank">Dwiangga Design</a>
     "image": "images/react.png",
+  },
+  {
+    "name": "Tailwind",
+    // https://techicons.dev/icons/tailwindcss
+    "image": "images/Tailwind.svg",
   },
 
 ];
