@@ -2,7 +2,7 @@ export const projects = [
   {
     "name": "B.Shop Online Site",
     "image": "images/bshop.png",
-    "description": "An on-going school project for an online shop. This enhances skills on React and Tailwind CSS to create a functional shopping cart.",
+    "description": "An current school project for an online shop, which focuses on React and Tailwind CSS to create a functional shopping cart.",
     "type": "React Project (on-going)",
     "githubLink": "https://github.com/thikimyen-nguyen/js-framework-react",
     "liveSite": "https://bshop-no.netlify.app/"
