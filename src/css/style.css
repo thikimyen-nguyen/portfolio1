@@ -181,7 +181,7 @@ footer {
   
 }
 .card {
-    border: 2px solid var(--dark_violet);
+    border: 2px solid var(--violet);
     border-radius: 10px;
     padding: 0.5em;
     margin-bottom: 2em;
