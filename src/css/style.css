@@ -148,10 +148,14 @@ footer {
     font-family: var(--body_font);
     font-size: 1rem;
     margin: 1em 0em;
+    transition-duration: 0.4s;
+
 }
 .cta:hover {
-    background-color: var(--violet);
-    color: var(--black);
+    /* background-color: var(--light_violet);
+    color: var(--black); */
+    box-shadow: 0px 2px 20px 10px var(--light_violet);
+
 }
 .cta-primary {
     background-color: black;
@@ -164,10 +168,13 @@ footer {
     padding: 0.5em 1.5em;
     background-color: black;
     margin: 0.5em;
+    transition-duration: 0.4s;
 }
 .cta_cover:hover {
     background-color: var(--light_violet);
     color: var(--black);
+    box-shadow: 0px 2px 20px 10px var(--light_violet);
+
 }
 #cta_cover {
     text-align: center;
