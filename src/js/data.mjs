@@ -3,7 +3,7 @@ export const projects = [
     "name": "Holidaze Accommodation Site",
     "image": "images/holidaze.webp",
     "description": "Final project for an accommodation booking application, which built with React and Tailwind to create booking functionality.",
-    "type": "Project Exam",
+    "type": "Project Exam 2",
     "githubLink": "https://github.com/thikimyen-nguyen/project-exam-2",
     "liveSite": "https://holidaze-no.netlify.app/"
   },
@@ -11,7 +11,7 @@ export const projects = [
     "name": "B.Shop Online Site",
     "image": "images/bshop.png",
     "description": "An current school project for an online shop, which focuses on React, Tailwind CSS and uses Noroff API to create a functional shopping cart.",
-    "type": "React Project",
+    "type": "JavaScript React Project",
     "githubLink": "https://github.com/thikimyen-nguyen/js-framework-react",
     "liveSite": "https://bshop-no.netlify.app/"
   },
